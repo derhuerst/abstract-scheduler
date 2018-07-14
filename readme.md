@@ -3,7 +3,12 @@
 **An interface and test suite to implement various [scheduling algorithms](https://en.wikipedia.org/wiki/Scheduling_(computing)#Scheduling_disciplines).** The goal is to define a simple and flexible standard for libraries that implement scheduling algorithms, so that you can replace them easily.
 
 ```js
-// todo
+const createScheduler = require('any-abstract-scheduler-compatible')
+
+const servers = createScheduler(['1.example.com', '2.example.com'])
+servers.get() // '1.example.com'
+servers.get() // '2.example.com'
+servers.get() // '1.example.com'
 ```
 
 [![npm version](https://img.shields.io/npm/v/abstract-scheduler.svg)](https://www.npmjs.com/package/abstract-scheduler)
@@ -44,7 +49,25 @@ runAbstractSchedulerTests(createMyScheduler)
 
 ## The `abstract-scheduler` API
 
-*todo*
+### `createScheduler(values = [])`
+
+Create an empty scheduler or provide some initial values.
+
+### `scheduler.add(value)`
+
+Add a value to the scheduler.
+
+### `scheduler.remove(value)`
+
+Remove a value from the scheduler. Returns `true` if the value was in the scheduler and `false` if it wasn't.
+
+### `scheduler.has(value)`
+
+Checks whether the given value is already in the scheduler. Returns either `true` or `false`.
+
+### `scheduler.get()`
+
+Get the next value according to the scheduling algorithm.
 
 
 ## Related

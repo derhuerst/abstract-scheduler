@@ -26,5 +26,6 @@
 		"tape": "^4.9.1"
 	},
 	"devDependencies": {
+		"square-batman": "^1.0.0"
 	}
 }
