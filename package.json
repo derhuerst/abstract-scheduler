@@ -1,0 +1,29 @@
+{
+	"name": "abstract-scheduler",
+	"description": "An interface and test suite to implement various scheduling algorithms.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"scheduling",
+		"scheduler",
+		"interface",
+		"spec",
+		"algorithm",
+		"test suite"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/abstract-scheduler",
+	"repository": "derhuerst/abstract-scheduler",
+	"bugs": "https://github.com/derhuerst/abstract-scheduler/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+	}
+}
