@@ -26,10 +26,10 @@ Send a PR by adding yours!
 
 Include this badge if you make a library compatible with `abstract-scheduler`.
 
-[![compatible with abstract-scheduler](badge.png)](readme.md)
+[![compatible with abstract-scheduler](badge.svg)](readme.md)
 
 ```md
-[![compatible with abstract-scheduler](https://github.com/derhuerst/abstract-scheduler/raw/master/badge.png)](https://github.com/derhuerst/abstract-scheduler)
+[![compatible with abstract-scheduler](https://github.com/derhuerst/abstract-scheduler/raw/master/badge.svg)](https://github.com/derhuerst/abstract-scheduler)
 ```
 
 
