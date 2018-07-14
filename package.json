@@ -23,6 +23,7 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"tape": "^4.9.1"
 	},
 	"devDependencies": {
 	}
