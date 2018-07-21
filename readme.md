@@ -35,6 +35,10 @@ Include this badge if you make a library compatible with `abstract-scheduler`.
 
 ## How to test for `abstract-scheduler` compatibility
 
+```shell
+npm i abstract-scheduler --save-dev
+```
+
 Include this in your test file:
 
 ```js
