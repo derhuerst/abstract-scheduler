@@ -1,8 +1,6 @@
 'use strict'
 
-const {RoundRobin} = require('square-batman')
+const createRoundRobin = require('round-robin-scheduler')
 const runAbstractSchedulerTests = require('.')
-
-const createRoundRobin = vals => new RoundRobin(vals)
 
 runAbstractSchedulerTests(createRoundRobin)
