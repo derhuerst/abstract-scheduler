@@ -19,13 +19,17 @@ const testScheduler = (createScheduler) => {
 
 	test('scheduler.add', (t) => {
 		const scheduler = createScheduler([])
-		t.plan(3)
+		t.plan(5)
 
 		t.equal(typeof scheduler.add, 'function', 'scheduler.add should be a function')
 		t.equal(scheduler.add.length, 1, 'scheduler.add.length should be 1')
+		let res1, res2
 		t.doesNotThrow(() => {
-			scheduler.add('foo')
+			res1 = scheduler.add('foo')
+			res2 = scheduler.add('bar')
 		}, `scheduler.add('foo') should work`)
+		t.equal(res1, 0, 'the 1st scheduler.add() should have returned 0')
+		t.equal(res2, 1, 'the 2nd scheduler.add() should have returned 1')
 	})
 
 	test('scheduler.remove', (t) => {
@@ -38,11 +42,11 @@ const testScheduler = (createScheduler) => {
 
 		let res1
 		t.doesNotThrow(() => {
-			res1 = scheduler.remove('foo')
-		}, `scheduler.remove('foo') should work`)
+			res1 = scheduler.remove(0)
+		}, `scheduler.remove(0) should work`)
 		t.equal(res1, true, 'scheduler.remove should return true for a known item')
 
-		const res2 = scheduler.remove('bar')
+		const res2 = scheduler.remove(1)
 		t.equal(res2, false, 'scheduler.remove should return false for an unknown item')
 	})
 

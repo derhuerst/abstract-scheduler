@@ -59,11 +59,11 @@ Create an empty scheduler or provide some initial values.
 
 ### `scheduler.add(value)`
 
-Add a value to the scheduler.
+Add a value to the scheduler. Returns the (`0`-based) index of the stored value.
 
-### `scheduler.remove(value)`
+### `scheduler.remove(i)`
 
-Remove a value from the scheduler. Returns `true` if the value was in the scheduler and `false` if it wasn't.
+Remove a value by (`0`-based) index. Returns `true` if the scheduler contained value, `false` otherwise.
 
 ### `scheduler.has(value)`
 
