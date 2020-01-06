@@ -17,9 +17,9 @@ servers.get() // '1.example.com'
 
 ## `abstract-scheduler`-compatible modules
 
-*todo*
-
 Send a PR by adding yours!
+
+- [`@derhuerst/round-robin-scheduler`](https://github.com/derhuerst/round-robin-scheduler) – A [round-robin](https://en.wikipedia.org/wiki/Round-robin_scheduling) scheduler.
 
 
 ## Badge

@@ -1,10 +1,12 @@
 {
 	"name": "abstract-scheduler",
 	"description": "An interface and test suite to implement various scheduling algorithms.",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"main": "index.js",
 	"files": [
-		"index.js"
+		"index.js",
+		"example.js",
+		"badge.svg"
 	],
 	"keywords": [
 		"scheduling",
@@ -26,6 +28,6 @@
 		"tape": "^4.9.1"
 	},
 	"devDependencies": {
-		"square-batman": "^1.0.0"
+		"@derhuerst/round-robin-scheduler": "^1.0.3"
 	}
 }

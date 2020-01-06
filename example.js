@@ -1,6 +1,6 @@
 'use strict'
 
-const createRoundRobin = require('round-robin-scheduler')
+const createRoundRobin = require('@derhuerst/round-robin-scheduler')
 const runAbstractSchedulerTests = require('.')
 
 runAbstractSchedulerTests(createRoundRobin)
