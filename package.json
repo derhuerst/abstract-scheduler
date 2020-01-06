@@ -1,7 +1,7 @@
 {
 	"name": "abstract-scheduler",
 	"description": "An interface and test suite to implement various scheduling algorithms.",
-	"version": "3.0.1",
+	"version": "4.0.0",
 	"main": "index.js",
 	"files": [
 		"index.js",
@@ -22,12 +22,15 @@
 	"bugs": "https://github.com/derhuerst/abstract-scheduler/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=10"
 	},
 	"dependencies": {
 		"tape": "^4.9.1"
 	},
 	"devDependencies": {
 		"@derhuerst/round-robin-scheduler": "^1.0.3"
+	},
+	"scripts": {
+		"prepublishOnly": "node example.js"
 	}
 }

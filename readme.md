@@ -12,6 +12,8 @@ servers.get() // '1.example.com'
 ```
 
 [![npm version](https://img.shields.io/npm/v/abstract-scheduler.svg)](https://www.npmjs.com/package/abstract-scheduler)
+[![build status](https://api.travis-ci.org/derhuerst/abstract-scheduler.svg?branch=master)](https://travis-ci.org/derhuerst/abstract-scheduler)
+![minimum Node.js version](https://img.shields.io/node/v/abstract-scheduler.svg)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/abstract-scheduler.svg)
 
 
@@ -26,10 +28,10 @@ Send a PR by adding yours!
 
 Include this badge if you make a library compatible with `abstract-scheduler`.
 
-[![compatible with abstract-scheduler](badge.svg)](readme.md)
+[![compatible with abstract-scheduler](https://unpkg.com/abstract-scheduler@4/badge.svg)](readme.md)
 
 ```md
-[![compatible with abstract-scheduler](https://github.com/derhuerst/abstract-scheduler/raw/master/badge.svg)](https://github.com/derhuerst/abstract-scheduler)
+[![compatible with abstract-scheduler](https://unpkg.com/abstract-scheduler@4/badge.svg)](https://github.com/derhuerst/abstract-scheduler)
 ```
 
 

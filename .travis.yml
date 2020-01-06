@@ -2,8 +2,7 @@ language: node_js
 node_js:
   - 'stable'
   - 'lts/*'
-  - '8'
-  - '6'
+  - '10'
 script:
   - node example.js
 cache: npm
